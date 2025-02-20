@@ -6,6 +6,7 @@
 *
 */
 
+//firstNonRepeating
 function firstNonRepeating(string){
     for(let i =0; i<string.length; i++){
         let repeated = false;
@@ -21,7 +22,7 @@ function firstNonRepeating(string){
     }
 }
 string = 'abacddbec';
-console.log(firstNonRepeating(string)); // Debería imprimir 'e'
+console.log(firstNonRepeating(string)); 
 
 
 //Bubble sort
@@ -194,7 +195,6 @@ function sortStrings(strings) {
     return strings.slice().sort();
 }
 
-// Ejemplo de uso
 const cheins = ["hola", "que", "programación", "adiós", "mundo"];
 console.log(sortStrings(cheins)); 
 
@@ -274,6 +274,5 @@ function sortDescending(numeros) {
     return numeros.slice().sort((a, b) => b - a);
 }
 
-// Ejemplo de uso
 const numebers = [5, 3, 8, 12, 21, 4, 2];
 console.log(sortDescending(numebers));
