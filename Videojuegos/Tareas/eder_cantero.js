@@ -149,7 +149,7 @@ function deduplicate(arrInicial) {
 
     for (let i = 0; i < arrInicial.length; i++) {
         const valorActual = arrInicial[i];
-        // Si el valor no está en arrFinal, lo agregamos
+        
         if (!arrFinal.includes(valorActual)) {
             arrFinal.push(valorActual);
         }
@@ -162,9 +162,9 @@ console.log(deduplicate([1,2,2,4]));
 
 //find shortest string
 function findShortestString(strings) {
-    if (strings.length === 0) return 0; // Si la lista está vacía, regresamos 0
+    if (strings.length === 0) return 0; //si la lista está vacia regresa 0
 
-    let minLength = strings[0].length; // Inicializamos minLength con la longitud de la primera cadena
+    let minLength = strings[0].length;
 
     for (let i = 1; i < strings.length; i++) {
         if (strings[i].length < minLength) {
