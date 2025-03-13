@@ -1,0 +1,11 @@
+header{
+    h1{
+        border: black 2px dotted;
+        border-radius: 10px;
+        padding:20px;
+
+    }
+    border: black 2px dotted;
+    border-radius: 10px;
+    padding:20px;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flujo de Trabajo con GitHub</title>
+</head>
+<body>
+    <header>
+        <h1>Flujo de Trabajo con GitHub</h1>
+        <p>A continuación, se describe el <strong>flujo de trabajo</strong> recomendado al utilizar GitHub con Git.</p>
+    </header>
+
+    <hr>
+
+    <main>
+        <nav>
+            <h2>Pasos para trabajar con GitHub</h2>
+            <ol>
+                <li><strong>Crear una cuenta en GitHub:</strong> 
+                    <ul>
+                        <li>Regístrate en <a href="https://github.com/" target="_blank">GitHub</a>.</li>
+                        <li>Configura tu perfil y preferencias.</li>
+                    </ul>
+                </li>
+
+                <li><strong>Configurar SSH en tu equipo:</strong> 
+                    <ul>
+                        <li>Abre la terminal y genera una clave SSH con:
+                            <pre><code>ssh-keygen -t rsa -b 4096 -C "tu correo electronico aquí"</code></pre>
+                        </li>
+                        <li>Agrega la clave pública a tu cuenta de GitHub en <i>Settings > SSH and GPG keys</i>.</li>
+                        <li>Verifica la conexión con:
+                            <pre><code>ssh -T git@github.com</code></pre>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><strong>Crear un repositorio en GitHub:</strong>
+                    <ul>
+                        <li>Ve a Repositories y haz clic en <i>New</i>.</li>
+                        <li>Ponle un nombre y selecciona la licencia MIT.</li>
+                    </ul>
+                </li>
+
+                <li><strong>Clonar el repositorio en tu computadora:</strong>
+                    <ul>
+                        <li>En la terminal, usa el siguiente comando (reemplaza la URL con la de tu repositorio):
+                            <pre><code>git clone [URL_DEL_REPOSITORIO]</code></pre>
+                        </li>
+                        <li>Accede a la carpeta del repositorio clonado:
+                            <pre><code>cd [Nombre del repositorio]</code></pre>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><strong>Hacer cambios en el proyecto:</strong>
+                    <ul>
+                        <li>Edita los archivos con un editor de código.</li>
+                        <li>Verifica los cambios realizados con:
+                            <pre><code>git status</code></pre>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><strong>Añadir y confirmar los cambios:</strong>
+                    <ul>
+                        <li>Agregar todos los archivos modificados:
+                            <pre><code>git add .</code></pre>
+                        </li>
+                        <li>Confirmar los cambios con un mensaje descriptivo:
+                            <pre><code>git commit -m "Descripción de los cambios"</code></pre>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><strong>Subir los cambios al repositorio remoto:</strong>
+                    <ul>
+                        <li>Enviar los cambios a GitHub:
+                            <pre><code>git push origin main</code></pre>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><strong>Actualizar el repositorio local con cambios remotos:</strong>
+                    <ul>
+                        <li>Si hay cambios en GitHub hechos por otros colaboradores, usa:
+                            <pre><code>git pull origin main</code></pre>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </nav>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p style="color:rgb(236, 23, 23);">Enlaces a otras páginas:</p>
+        <ul>
+            <li><a href="comandos.html">Comandos Git</a></li>
+            <li><a href="vlog.html">Página principal</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
