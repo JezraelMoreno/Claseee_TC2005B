@@ -4,96 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Comandos</title>
+    <link rel="stylesheet" href="hola.css">
 </head>
 <body>
 
-    <header>
+    <header id="Encabezado">
         <h1>Comandos de la Terminal</h1>
         <p>A continuación, se presentan algunos <strong>comandos esenciales de Git y la terminal</strong> utilizados en el flujo de trabajo.</p>
     </header>
 
-    <hr>
-
-    <nav>
-        <p style="color:rgb(236, 23, 23);"><strong>Enlaces a otras páginas:</strong></p>
-        <ul>
+    <div id="Enlaces">
+        <p><strong>Enlaces a otras páginas:</strong></p>
+        <ol>
             <li><a href="flujo_de_trabajo.html">Flujo de trabajo</a></li>
-            <li><a href="vlog.html">Página principal</a></li>
-        </ul>
-    </nav>
-
-    <hr>
+            <li><a href="info_css.html">Informacion de CSS</a></li>
+            <li><a href="index.html">Página principal</a></li>
+        </ol>
+    </div>
 
     <main>
         <h2>Tabla de comandos de Git y Terminal</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Comando</th>
-                    <th>Función</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><code>mkdir [nombre_carpeta]</code></td>
-                    <td>Crea un nuevo directorio (carpeta).</td>
-                </tr>
-                <tr>
-                    <td><code>touch [nombre_archivo]</code></td>
-                    <td>Crea un nuevo archivo vacío.</td>
-                </tr>
-                <tr>
-                    <td><code>ls</code></td>
-                    <td>Lista los archivos y carpetas en el directorio actual.</td>
-                </tr>
-                <tr>
-                    <td><code>cd [nombre_carpeta]</code></td>
-                    <td>Cambia al directorio especificado.</td>
-                </tr>
-                <tr>
-                    <td><code>git init</code></td>
-                    <td>Inicializa un nuevo repositorio Git en la carpeta actual.</td>
-                </tr>
-                <tr>
-                    <td><code>git clone [URL]</code></td>
-                    <td>Clona un repositorio remoto en tu computadora.</td>
-                </tr>
-                <tr>
-                    <td><code>git status</code></td>
-                    <td>Muestra el estado actual de los archivos en el repositorio.</td>
-                </tr>
-                <tr>
-                    <td><code>git add .</code></td>
-                    <td>Añade todos los cambios al área de preparación (staging).</td>
-                </tr>
-                <tr>
-                    <td><code>git commit -m "mensaje"</code></td>
-                    <td>Confirma los cambios con un mensaje descriptivo.</td>
-                </tr>
-                <tr>
-                    <td><code>git push origin main</code></td>
-                    <td>Envía los cambios confirmados al repositorio remoto en la rama <code>main</code>.</td>
-                </tr>
-                <tr>
-                    <td><code>git pull origin main</code></td>
-                    <td>Obtiene y fusiona los cambios más recientes desde el repositorio remoto.</td>
-                </tr>
-                <tr>
-                    <td><code>git branch</code></td>
-                    <td>Lista las ramas disponibles en el repositorio.</td>
-                </tr>
-                <tr>
-                    <td><code>git checkout -b [nombre_rama]</code></td>
-                    <td>Crea y cambia a una nueva rama.</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="tabla-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Comando</th>
+                        <th>Función</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>mkdir [nombre_carpeta]</code></td>
+                        <td>Crea un nuevo directorio (carpeta).</td>
+                    </tr>
+                    <tr>
+                        <td><code>touch [nombre_archivo]</code></td>
+                        <td>Crea un nuevo archivo vacío.</td>
+                    </tr>
+                    <tr>
+                        <td><code>ls</code></td>
+                        <td>Lista los archivos y carpetas en el directorio actual.</td>
+                    </tr>
+                    <tr>
+                        <td><code>cd [nombre_carpeta]</code></td>
+                        <td>Cambia al directorio especificado.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git init</code></td>
+                        <td>Inicializa un nuevo repositorio Git en la carpeta actual.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git clone [URL]</code></td>
+                        <td>Clona un repositorio remoto en tu computadora.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git status</code></td>
+                        <td>Muestra el estado actual de los archivos en el repositorio.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git add .</code></td>
+                        <td>Añade todos los cambios al área de preparación (staging).</td>
+                    </tr>
+                    <tr>
+                        <td><code>git commit -m "mensaje"</code></td>
+                        <td>Confirma los cambios con un mensaje descriptivo.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git push origin main</code></td>
+                        <td>Envía los cambios confirmados al repositorio remoto en la rama <code>main</code>.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git pull origin main</code></td>
+                        <td>Obtiene y fusiona los cambios más recientes desde el repositorio remoto.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git branch</code></td>
+                        <td>Lista las ramas disponibles en el repositorio.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git checkout -b [nombre_rama]</code></td>
+                        <td>Crea y cambia a una nueva rama.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
 
-    <hr>
-
     <footer>
-        <p>Estos son algunos de los comandos que hemos usado</p>
+        <p>Eder Jezrael Cantero Moreno 2025</p>
     </footer>
 
 </body>

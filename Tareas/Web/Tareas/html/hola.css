@@ -1,11 +1,187 @@
-header{
-    h1{
-        border: black 2px dotted;
-        border-radius: 10px;
-        padding:20px;
+/*
+background-image
+width, height
+*/
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6; /* Asegura que el texto tenga más espacio entre líneas */
+}
 
-    }
-    border: black 2px dotted;
-    border-radius: 10px;
-    padding:20px;
+/* Encabezado */
+#Encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #1c5052;
+    color: aliceblue;
+    padding: 20px;
+    border-bottom: 5px solid #348e91;
+}
+
+#Encabezado h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Enlaces */
+#Enlaces {
+    font: italic bold 16px/1.5 'Arial', sans-serif;
+    color: #1c5052;
+    border-left: 5px solid #348e91;
+    border-right: 5px solid #348e91;
+    padding: 20px 30px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    width: fit-content;
+    text-align: center;
+}
+
+/* Lista de enlaces */
+#Enlaces ol {
+    font-style: oblique;
+    list-style: square;
+    padding-left: 20px;
+}
+
+#Enlaces a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1c5052;
+}
+
+#Enlaces a:visited {
+    color: #1c5052;
+}
+
+#Enlaces a:hover {
+    color: #ff5733;
+}
+
+a:link, a:visited {
+    color: #1c5052;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1c5052;
+    color: white;
+    border-top: 5px solid #348e91;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer a {
+    font-style: oblique;
+    color: #f2f2f2;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#footerBlog a:hover {
+    color: #ff5733;
+}
+
+#footerBlog a{
+    color: #fff;
+}
+
+
+main {
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.tabla-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+table {
+    width: 90%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+
+main section {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+}
+
+main h2 {
+    font-size: 1.8em;
+    color: #1c5052;
+    margin-bottom: 15px; 
+}
+
+main h3 {
+    font-size: 1.4em;
+    color: #348e91;
+    margin-top: 20px;
+    margin-bottom: 10px; 
+}
+
+p {
+    margin-bottom: 15px; 
+}
+
+pre, code {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #ddd;
+    margin-bottom: 15px; 
+    overflow: auto; /*se me salía el texto*/
+}
+
+/* Para el footer */
+footer ul {
+    margin-top: 10px;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+a:link, a:visited {
+    color: #1c5052;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff5733;
+}
+
+#Enlaces a {
+    color: #1c5052;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#Enlaces a:hover {
+    color: #ff5733;
 }
